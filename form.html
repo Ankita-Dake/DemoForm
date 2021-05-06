@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body{
+                background-image:url(images/a5.jpg) ;
+                -webkit-background-size:cover;
+                background-size: cover;
+               
+      
+            }
+            .form-area{
+                position: absolute;
+                top:50%;
+                left:50%;
+                transform: translate(-50%,-50%);
+                width:450px;
+                height: 650px;
+                box-sizing: border-box;
+               background:lightsteelblue;
+                
+                
+
+            }
+          table{
+                
+                margin-left: 20%;
+                height: 100px;
+               
+               
+            }
+            
+            h1{
+                color:darkslateblue;
+                text-align: center;
+            }
+            select{
+                width: 100%;
+            }
+            input[type=submit]:hover{
+                background-color: royalblue;
+            }
+          
+           
+            td{
+                padding-top: 25px;
+                font-weight: bold;
+               
+               
+            }
+        </style>
+
+    </head>
+    <body>
+       <div class="form-area">
+        <form>
+            <h1>
+                Student Registration form
+            </h1>
+            <table >
+                <tr>
+                    <td>
+                       Name  
+                    </td>
+                    <td>
+                        <input type="text" name="name" placeholder="Enter the Name" maxlength="20">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Address 
+                    </td>
+                    <td>
+                        <input type="text" name="add" placeholder="Enter Address">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Email 
+                    </td>
+                    <td>
+                        <input type="email" name="email" placeholder="Enter Email" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Password 
+                    </td>
+                    <td>
+                        <input type="password" name="Pass" placeholder="Enter password" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Phone No 
+                    </td>
+                    <td>
+                        <input type="number" name="number" placeholder="Enter number">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                       Date 
+                    </td>
+                    <td>
+                        <input type="date" name="date">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Age 
+                    </td>
+                    <td style="width: 100px;">
+                        <input type="number" name="num" min="18" max="28">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Gender 
+                    </td>
+                    <td>
+                        <input type="radio" name="gender" value="male"> Male
+                        <input type="radio" name="gender" value="female"> Female
+                    </td>
+                </tr>
+                <tr>
+                    <td>Qualification </td>
+                    <td>
+                        <select name="qualification" required>
+                            <option value="MCA">MCA</option>
+                            <option value="MCA">B.E</option>
+                            <option value="MCA">B.Tech</option>
+                            <option value="MCA">Bsc</option>
+                            <option value="MCA">BCS</option>
+                            <option value="MCA">MCS</option>
+                        </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td >
+                        <input  style="height: 40px; width: 150px; font-size: 150%;" type="submit" name="btn" >
+                    </td>
+                </tr>
+           
+            </table>
+        </form>
+        </div>
+    </body>
+</html>
